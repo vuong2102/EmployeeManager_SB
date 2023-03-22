@@ -1,22 +1,31 @@
 package com.example.employeemanager.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_DEFAULT;
 
 @Entity
 @Table(name = "employees")
 @Data
+@JsonInclude(NON_DEFAULT)
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "first_name")
-    private String firstName;
-    @Column(name = "last_name")
-    private String lastName;
-    @Column(name = "email_id")
-    private String emailId;
+    @Column(name = "full_name")
+    private String fullName;
+    @Column(name = "address")
+    private String address;
+    @Column(name = "email")
+    private String email;
+    @Column(name = "phone_number")
+    private String phoneNumber;
+    @OneToMany(mappedBy = "employeeAccount", cascade = CascadeType.ALL)
+    private List<AccountBank> accountBanks;
+
 }

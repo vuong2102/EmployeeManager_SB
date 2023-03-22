@@ -1,0 +1,15 @@
+{
+  "accountNumber": "01221022002",
+  "bankName": "MB",
+  "branchLocation": "Cầu Giấy",
+  "cardType": "Debit-card",
+  "nameEmployee": "",
+  "phoneEmployee": "",
+  "emailEmployee": "",
+  "employeeAccount": {
+    "fullName": "Hoàng Quốc Việt",
+    "address" : "ngõ 20, đường Mỹ Đình, Nam Từ Liêm, HN",
+    "email"  : "vuong2k2002@gmail.com",
+    "phoneNumber"  : "0388530484"
+  }
+}
