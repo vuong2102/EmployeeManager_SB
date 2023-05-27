@@ -1,0 +1,16 @@
+{
+  "bank":  "MB Bank",
+  "accountNumber": "012418242002",
+  "branch": "My Dinh, HN",
+  "employee":{
+    "username": "test123",
+    "email":"test123@gmail.com",
+    "address":"My Dinh, HN",
+    "phoneNumber":"0123456789",
+    "password":"12345",
+    "role": "user"
+  }
+}
+
+
+
